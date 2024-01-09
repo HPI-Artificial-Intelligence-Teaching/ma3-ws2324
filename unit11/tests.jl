@@ -790,7 +790,7 @@ savefig("~/Downloads/upper_one_sided_interval_chi_squared_distributions.svg")
 
 λ = lr_test(scifi2021_movies.averageRating, scifi2022_movies.averageRating)
 println("λ = ", λ)
-quantile(Chisq(1), 0.95)
+println("c_0.95 = ", quantile(Chisq(2), 0.95))
 
 plot_pvalue_distribution(type = :both)
 savefig("~/Downloads/pvalue_distribution_both.svg")
